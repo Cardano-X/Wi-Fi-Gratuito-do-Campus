@@ -6,13 +6,16 @@
     <title>Conexão Wi-Fi Acadêmica</title>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #f4f4f9; }
-        .box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); display: inline-block; max-width: 400px; }
+        h1.main-title { color: #007bff; font-size: 2.2rem; margin-bottom: 30px; }
+        .box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); display: inline-block; max-width: 400px; width: 100%; }
         input { width: 90%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
-        button { background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; width: 95%; }
-        .alert-box { display: none; background-color: #ffdddd; border-left: 6px solid #f44336; padding: 20px; color: #550000; margin-top: 20px; text-align: left; }
+        button { background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; width: 95%; font-size: 1rem; }
+        .alert-box { display: none; background-color: #ffdddd; border-left: 6px solid #f44336; padding: 20px; color: #550000; margin: 20px auto; text-align: left; max-width: 400px; border-radius: 4px; }
     </style>
 </head>
 <body>
+
+<h1 class="main-title">Wi-Fi-Gratuito-do-Campus</h1>
 
 <div class="box" id="formBox">
     <h2>Acesso ao Wi-Fi Gratuito</h2>
@@ -36,7 +39,6 @@
 
 <script>
     function simularAlerta() {
-        // Esconde o formulário fictício e mostra o alerta educativo
         document.getElementById('formBox').style.display = 'none';
         document.getElementById('alertBox').style.display = 'block';
     }
